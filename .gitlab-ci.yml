@@ -6,7 +6,7 @@ build-job:
   stage: build
   only:
     - main
-  image: node:14.18.2
+  image: node:17.2.0
   script:
     # If no .npmrc is included in the repo, generate a temporary one that is configured to publish to GitLab's NPM registry
     - |
@@ -22,7 +22,7 @@ build-job:
     - npm run build
   artifacts:
     paths:
-      - "dist"
+      - "public"
     expire_in: 30 mins
 
 deploy-prod:
@@ -38,5 +38,5 @@ deploy-prod:
     - chmod 700 ~/.ssh
   script:
     - echo "Start deploying"
-    - scp -ro StrictHostKeyChecking=no dist/* $SSH_USER@$SSH_HOST:$SSH_UPLOAD_PATH
+    - scp -ro StrictHostKeyChecking=no public/* $SSH_USER@$SSH_HOST:$SSH_UPLOAD_PATH
     - echo "Application successfully deployed."
