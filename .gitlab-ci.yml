@@ -6,7 +6,7 @@ build-job:
   stage: build
   only:
     - main
-  image: node:17.2.0
+  image: node:17.6.0
   script:
     # If no .npmrc is included in the repo, generate a temporary one that is configured to publish to GitLab's NPM registry
     - |
@@ -38,5 +38,8 @@ deploy-prod:
     - chmod 700 ~/.ssh
   script:
     - echo "Start deploying"
+    - echo "Remove external files"
+    - ssh $SSH_USER@$SSH_HOST:$SSH_UPLOAD_PATH "rm -fr *"
+    - echo "Copy new files"
     - scp -ro StrictHostKeyChecking=no public/* $SSH_USER@$SSH_HOST:$SSH_UPLOAD_PATH
     - echo "Application successfully deployed."
