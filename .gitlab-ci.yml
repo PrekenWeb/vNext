@@ -39,7 +39,7 @@ deploy-prod:
   script:
     - echo "Start deploying"
     - echo "Remove external files"
-    - ssh $SSH_USER@$SSH_HOST "rm -fr $SSH_UPLOAD_PATH/*"
+    - ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -fr $SSH_UPLOAD_PATH/*"
     - echo "Copy new files"
     - scp -ro StrictHostKeyChecking=no public/* $SSH_USER@$SSH_HOST:$SSH_UPLOAD_PATH
     - echo "Application successfully deployed."
