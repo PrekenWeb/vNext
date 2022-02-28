@@ -1,0 +1,42 @@
+stages:
+  - build
+  - deploy
+
+build-job:
+  stage: build
+  only:
+    - main
+  image: node:14.18.2
+  script:
+    # If no .npmrc is included in the repo, generate a temporary one that is configured to publish to GitLab's NPM registry
+    - |
+      if [[ ! -f .npmrc ]]; then
+        echo 'No .npmrc found! Creating one now. Please review the following link for more information: https://docs.gitlab.com/ee/user/packages/npm_registry/index.html#project-level-npm-endpoint-1'
+        {
+          echo "@${CI_PROJECT_ROOT_NAMESPACE}:registry=${CI_API_V4_URL}/projects/${CI_PROJECT_ID}/packages/npm/"
+          echo "${CI_API_V4_URL#http*:}/projects/${CI_PROJECT_ID}/packages/npm/:_authToken=\${CI_JOB_TOKEN}"
+        } >> .npmrc
+      fi
+    - echo "Created the following .npmrc:"; cat .npmrc
+    - npm install
+    - npm run build
+  artifacts:
+    paths:
+      - "dist"
+    expire_in: 30 mins
+
+deploy-prod:
+  stage: deploy
+  only:
+    - main
+  image: alpine
+  before_script:
+    - apk add openssh-client
+    - eval $(ssh-agent -s)
+    - echo "$SSH_KEY" | tr -d '\r' | ssh-add -
+    - mkdir -p ~/.ssh
+    - chmod 700 ~/.ssh
+  script:
+    - echo "Start deploying"
+    - scp -ro StrictHostKeyChecking=no dist/* $SSH_USER@$SSH_HOST:$SSH_UPLOAD_PATH
+    - echo "Application successfully deployed."
