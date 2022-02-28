@@ -22,7 +22,7 @@ build-job:
     - npm run build
   artifacts:
     paths:
-      - "public"
+      - "build"
     expire_in: 30 mins
 
 deploy-prod:
@@ -41,5 +41,5 @@ deploy-prod:
     - echo "Remove external files"
     - ssh -o StrictHostKeyChecking=no $SSH_USER@$SSH_HOST "rm -fr $SSH_UPLOAD_PATH/*"
     - echo "Copy new files"
-    - scp -ro StrictHostKeyChecking=no public/* $SSH_USER@$SSH_HOST:$SSH_UPLOAD_PATH
+    - scp -ro StrictHostKeyChecking=no build/* $SSH_USER@$SSH_HOST:$SSH_UPLOAD_PATH
     - echo "Application successfully deployed."
