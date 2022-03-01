@@ -1,4 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+// Global colors //
+//blue variables//
+$blue: #1274BA;
+$lighter-blue: #418FC7;
+$lighter-blue-saturated:#88B9DC;
+$blue-grey: #C6DDEE;
+$dark-blue: #114367;
+$dark-blue-saturated: #3C617D;
+//green variables//
+$green: #45BBAF;
+$lighter-green:#DAF1EF;
+//hovers//
+$btn-hover: #7C98AC;
+$btn-hover-shadow:#114367;
+$link-hover: #0AC7E5;
+$btn-slider-hover: #1C5D76;
 body {
     margin: 0;
     font-family: 'Fira Sans', sans-serif;
