@@ -4,6 +4,11 @@ import './footer-responsive.scss'
 import { Container, Row, Col } from "react-bootstrap";
 import Nieuwsbrief from '../../assets/images/nieuwsbrief.png'
 import BackgroundFooter from '../../assets/images/background-footer.png'
+import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
+import Icon from '../../assets/icons/icon'
+
 
 class footer extends Component {
     render() {
@@ -27,7 +32,7 @@ class footer extends Component {
                                     <span >E-mail</span>
                                     <input type="email" id="email" required></input>
                                     </div>
-                                    <input id="submit-btn" type="submit" value="Inschrijven"></input>
+                                    <button id="submit-btn" type="submit">Inschrijven <Icon id="arrowright" icon="arrow-right" size="13px"/></button>
                                 </form>
                             </Col>
                         </Row>   
@@ -54,8 +59,8 @@ class footer extends Component {
                             </Col>
                             <Col xs={12} lg={3} className="social-wrapper">
                                 <h3>PrekenWeb op Social</h3>
-                                <a href="#">Facebook Icon</a>
-                                <a href="#">Twitter Icon</a>
+                                <a href="#" className='social-links'><Icon icon="facebook" size="20px" /></a>
+                                <a href="#" className='social-links'><Icon icon="twitter" size="20px" /></a>
                             </Col>
                             <span id='copyright'>© Copyright 2022 PrekenWeb</span>
                         </Row>
