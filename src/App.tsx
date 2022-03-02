@@ -14,6 +14,7 @@ const App: FC = () => {
         <Route path='/' element={<Home />} />
         <Route path='/allepreken' element={<AllePreken />} />
         <Route path='/prekendetail' element={<PrekenDetail />} />
+        <Route path='/contact' element={<Contact />}/>
       </Routes>
     </div>
   );
@@ -44,6 +45,16 @@ function PrekenDetail() {
   return (
     <>
     <Header />
+    <Footer />
+    </>
+  );
+}
+
+function Contact() {
+  return (
+    <>
+    <Header />
+      <h1>Contact Pagina</h1>
     <Footer />
     </>
   );

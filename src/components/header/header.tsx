@@ -11,9 +11,11 @@ import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
 import './header.scss';
+import England from '../../assets/images/england.svg'
 import Logo from '../../assets/images/logo.svg';
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
+import Icon from '../../assets/icons/icon'
 
 
 const Header = () => {
@@ -42,12 +44,12 @@ const Header = () => {
           <Container>
             <Row>
               <Col xs={12} lg={6}>
-                <a href="sermonweb.org" target="_blank">sermonweb.org</a>
+                <a href="sermonweb.org" target="_blank"> <img id="language" src={England} alt=""/>sermonweb.org<Icon id="external-link" icon="external-link" size="11px"/></a>
               </Col>
               <Col xs={12} lg={6}>
                 <ul className={"top-menu"}>
                   <li><a href="#">Registreren</a></li>
-                  <li><a href="#">Mijn PrekenWeb<span className="user-icon"></span></a></li>
+                  <li><a href="#">Mijn PrekenWeb<Icon id="user" icon="user" size="30px"/></a></li>
                 </ul>
               </Col>
             </Row>
@@ -93,12 +95,13 @@ const Header = () => {
                     }}
                   >
                     <MenuItem onClick={handleCloseNavMenu}>
-                      <Link to="/allepreken" className={"menu-item"}>Alle preken</Link>
+                      <Link to="/allepreken" className={"menu-item"}><Icon className='list-icon' icon="list" size="15px"/>Alle preken</Link>
                     </MenuItem>
                     <MenuItem onClick={handleCloseNavMenu}>
-                      <Link to="/contact" className={"menu-item"}>Hulp & contact</Link>
+                      <Link to="/contact" className={"menu-item"}><Icon className='info-icon' icon="info" size="15px"/>Hulp & contact</Link>
                     </MenuItem>
                   </Menu>
+
                 </Box>
                 <Typography
                   variant="h6"
@@ -109,9 +112,17 @@ const Header = () => {
                   LOGO
                 </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                  <Link to="/allepreken" className={"menu-item"}>Alle preken</Link>
-                  <Link to="/contact" className={"menu-item"}>Hulp & contact</Link>
+                  <Link to="/allepreken" className={"menu-item"}><Icon className='list-icon' icon="list" size="15px"/>Alle preken</Link>
+                  <Link to="/contact" className={"menu-item"}><Icon className='info-icon' icon="info" size="15px"/>Hulp & contact</Link>
+                  <div className="">
+                    <form className="nav-search" action="/">
+                      <input type="text" placeholder="Search.." name="search"></input>
+                      <button type="submit"></button>
+                    </form>
+                </div>
                 </Box>
+                
+                
               </Toolbar>
             </Col>
           </Row>
