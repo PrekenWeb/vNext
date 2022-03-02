@@ -1,0 +1,29 @@
+.recente-preken {
+    margin: 60px 0px;
+    h2 {
+        margin-bottom: 20px;
+        font-size: 26px;
+        line-height: 28px;
+        font-size: 700;
+        color: #114367;
+        #fast {
+            position: relative;
+            top: -2px;
+            color: #45BBAF;
+        }
+    }
+    a {
+        text-decoration: none;
+        color: #1274BA;
+        margin-bottom: 30px;
+        &:hover {
+            color: #0AC7E5;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .preken-top-col {
+        margin-bottom: 40px;
+    }
+}

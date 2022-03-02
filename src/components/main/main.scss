@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
+* {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+#backgroundmain {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#mainimage {
+    height: 300px;
+    width: auto;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 100px;
+}
+
+.text-wrapper {
+    padding: 100px 0px 90px 0px;
+    h1 {
+        font-size: 50px;
+        line-height: 60px;
+        font-weight: 800;
+        color: #114367;
+    }
+    p {
+        font-size: 18px;
+        line-height: 28px;
+        font-weight: 400;
+        color: #3c617d;
+        margin-bottom: 35px;
+    }
+    .button {
+        background-color: #1274BA;
+        color: white;
+        box-shadow: 0px 3px 0px #114367;
+        font-size: 16px;
+        font-weight: 700;
+        border: none;
+        border-radius: 3px;
+        padding: 6px 12px 6px 14px;
+        &:hover {
+            box-shadow: none;
+            position: relative;
+            bottom: -3px;
+        }
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}

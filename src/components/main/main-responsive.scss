@@ -1,0 +1,45 @@
+//Tablet//
+@media (max-width: 768px) {
+    #mainimage {
+        margin: -30px 0px;
+        height: 300px;
+        width: auto;
+    }
+    .image-wrapper {
+        justify-content: center;
+    }
+    .text-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 50px;
+        h1,
+        p {
+            text-align: center;
+        }
+        .button {
+            margin: auto;
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    #backgroundmain {
+        background-size: cover;
+    }
+    #mainimage {
+        height: 200px;
+        width: auto;
+        margin-bottom: -100px;
+    }
+    .text-wrapper {
+        h1 {
+            font-size: 26px;
+            line-height: 32px;
+        }
+        p {
+            font-size: 15px;
+            line-height: 24px;
+        }
+    }
+}

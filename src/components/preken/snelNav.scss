@@ -1,0 +1,38 @@
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 45px;
+    width: auto;
+    border: 1px solid #114367;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    transition: 0.1s ease-in-out;
+    .nav-link {
+        position: relative;
+        color: #114367;
+        top: 2px;
+        width: 95%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        height: 40px;
+    }
+    #arrow-right {
+        background-color: #DAF1EF;
+        padding: 10px;
+        color: #45BBAF;
+        border-radius: 50px;
+        position: relative;
+        top: 4px;
+        right: 4px;
+    }
+    &:hover {
+        background-color: #114367;
+        .nav-link {
+            color: white;
+        }
+        #arrow-right {
+            background-color: white;
+        }
+    }
+}
