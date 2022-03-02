@@ -4,6 +4,7 @@ import SnelNav from './snelNav'
 import { Container, Row, Col } from "react-bootstrap";
 import Icon from '../../assets/icons/icon'
 import './recentePreken.scss'
+import { Link } from "react-router-dom"
 
 class recentePreken extends Component {
     render() {
@@ -13,12 +14,12 @@ class recentePreken extends Component {
                 <Row>
                     <Col className='preken-top-col' xs={12} md={7} lg={7}>
                         <h2>Recente preken</h2>
+                        <Link to="/prekendetail"><Preken /></Link>
                         <Preken />
                         <Preken />
                         <Preken />
                         <Preken />
-                        <Preken />
-                        <a href='#'>Alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></a>
+                        <Link to="/allepreken"><a href='#'>Alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></a></Link>
                     </Col>
                     <Col></Col>
                     <Col xs={12} md={4} lg={4}>

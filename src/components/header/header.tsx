@@ -10,12 +10,11 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
-import './header.scss'
-import Logo from '../../assets/images/logo.svg'
+import './header.scss';
+import Logo from '../../assets/images/logo.svg';
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from 'react-router-dom';
 
-const pages = ['Alle preken', 'Hulp & contact'];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 const Header = () => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
@@ -46,7 +45,10 @@ const Header = () => {
                 <a href="sermonweb.org" target="_blank">sermonweb.org</a>
               </Col>
               <Col xs={12} lg={6}>
-                Test
+                <ul className={"top-menu"}>
+                  <li><a href="#">Registreren</a></li>
+                  <li><a href="#">Mijn PrekenWeb<span className="user-icon"></span></a></li>
+                </ul>
               </Col>
             </Row>
           </Container>
@@ -55,14 +57,11 @@ const Header = () => {
           <Row>
             <Col xs={12}>
               <Toolbar disableGutters>
-                <Typography
-                  variant="h6"
-                  noWrap
-                  component="div"
-                  sx={{ mr: 2, display: { xs: 'none', md: 'flex' } }}
-                >
-                  <img src={Logo} alt="" />
-                </Typography>
+                <div className="logo">
+                  <Link to="/">
+                    <img src={Logo} alt="" />
+                  </Link>
+                </div>
 
                 <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
                   <IconButton
@@ -93,11 +92,12 @@ const Header = () => {
                       display: { xs: 'block', md: 'none' },
                     }}
                   >
-                    {pages.map((page) => (
-                      <MenuItem key={page} onClick={handleCloseNavMenu}>
-                        <Typography textAlign="center">{page}</Typography>
-                      </MenuItem>
-                    ))}
+                    <MenuItem onClick={handleCloseNavMenu}>
+                      <Link to="/allepreken" className={"menu-item"}>Alle preken</Link>
+                    </MenuItem>
+                    <MenuItem onClick={handleCloseNavMenu}>
+                      <Link to="/contact" className={"menu-item"}>Hulp & contact</Link>
+                    </MenuItem>
                   </Menu>
                 </Box>
                 <Typography
@@ -109,45 +109,8 @@ const Header = () => {
                   LOGO
                 </Typography>
                 <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                  {pages.map((page) => (
-                    <Button
-                      key={page}
-                      onClick={handleCloseNavMenu}
-                      sx={{ my: 2, color: 'white', display: 'block' }}
-                    >
-                      {page}
-                    </Button>
-                  ))}
-                </Box>
-
-                <Box sx={{ flexGrow: 0 }}>
-                  <Tooltip title="Open settings">
-                    <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                      <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
-                    </IconButton>
-                  </Tooltip>
-                  <Menu
-                    sx={{ mt: '45px' }}
-                    id="menu-appbar"
-                    anchorEl={anchorElUser}
-                    anchorOrigin={{
-                      vertical: 'top',
-                      horizontal: 'right',
-                    }}
-                    keepMounted
-                    transformOrigin={{
-                      vertical: 'top',
-                      horizontal: 'right',
-                    }}
-                    open={Boolean(anchorElUser)}
-                    onClose={handleCloseUserMenu}
-                  >
-                    {settings.map((setting) => (
-                      <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                        <Typography textAlign="center">{setting}</Typography>
-                      </MenuItem>
-                    ))}
-                  </Menu>
+                  <Link to="/allepreken" className={"menu-item"}>Alle preken</Link>
+                  <Link to="/contact" className={"menu-item"}>Hulp & contact</Link>
                 </Box>
               </Toolbar>
             </Col>
