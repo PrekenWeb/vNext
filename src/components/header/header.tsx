@@ -43,10 +43,10 @@ const Header = () => {
         <div className={"top-bar"}>
           <Container>
             <Row>
-              <Col xs={12} lg={6}>
+              <Col xs={5} lg={6}>
                 <a href="sermonweb.org" target="_blank"> <img id="language" src={England} alt=""/>sermonweb.org<Icon id="external-link" icon="external-link" size="11px"/></a>
               </Col>
-              <Col xs={12} lg={6}>
+              <Col xs={7} lg={6}>
                 <ul className={"top-menu"}>
                   <li><a href="#">Registreren</a></li>
                   <li><a href="#">Mijn PrekenWeb<Icon id="user" icon="user" size="30px"/></a></li>
@@ -55,78 +55,32 @@ const Header = () => {
             </Row>
           </Container>
         </div>
+        <div className="top-bar-2">
         <Container>
           <Row>
-            <Col xs={12}>
-              <Toolbar disableGutters>
-                <div className="logo">
-                  <Link to="/">
-                    <img src={Logo} alt="" />
-                  </Link>
-                </div>
-
-                <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>
-                  <IconButton
-                    size="large"
-                    aria-label="account of current user"
-                    aria-controls="menu-appbar"
-                    aria-haspopup="true"
-                    onClick={handleOpenNavMenu}
-                    color="inherit"
-                  >
-                    <MenuIcon />
-                  </IconButton>
-                  <Menu
-                    id="menu-appbar"
-                    anchorEl={anchorElNav}
-                    anchorOrigin={{
-                      vertical: 'bottom',
-                      horizontal: 'left',
-                    }}
-                    keepMounted
-                    transformOrigin={{
-                      vertical: 'top',
-                      horizontal: 'left',
-                    }}
-                    open={Boolean(anchorElNav)}
-                    onClose={handleCloseNavMenu}
-                    sx={{
-                      display: { xs: 'block', md: 'none' },
-                    }}
-                  >
-                    <MenuItem onClick={handleCloseNavMenu}>
-                      <Link to="/allepreken" className={"menu-item"}><Icon className='list-icon' icon="list" size="15px"/>Alle preken</Link>
-                    </MenuItem>
-                    <MenuItem onClick={handleCloseNavMenu}>
-                      <Link to="/contact" className={"menu-item"}><Icon className='info-icon' icon="info" size="15px"/>Hulp & contact</Link>
-                    </MenuItem>
-                  </Menu>
-
-                </Box>
-                <Typography
-                  variant="h6"
-                  noWrap
-                  component="div"
-                  sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}
-                >
-                  LOGO
-                </Typography>
-                <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
-                  <Link to="/allepreken" className={"menu-item"}><Icon className='list-icon' icon="list" size="15px"/>Alle preken</Link>
-                  <Link to="/contact" className={"menu-item"}><Icon className='info-icon' icon="info" size="15px"/>Hulp & contact</Link>
-                  <div className="">
-                    <form className="nav-search" action="/">
-                      <input type="text" placeholder="Search.." name="search"></input>
-                      <button type="submit"></button>
-                    </form>
-                </div>
-                </Box>
-                
-                
-              </Toolbar>
+            <Col className="header-container" xs={12} md={12} lg={12}  xl={6}> 
+              <div className="logo">
+                <Link to="/">
+                  <img src={Logo} alt="" />
+                </Link>
+              </div>
+              <div className="menu-item-container">
+                <Link to="/allepreken" className={"menu-item lg"}><Icon className='list-icon' icon="list" size="15px"/>Alle preken</Link>
+                <Link to="/contact" className={"menu-item lg"}><Icon className='info-icon' icon="info" size="15px"/>Hulp & contact</Link>
+                <button className="menu menu-item"><Icon className='menu-icon' icon="menu" size="18px"/>Menu</button>
+              </div>
+            </Col>
+            <Col className="search-container" xs={12} md={12} lg={12} xl={6}>
+              <div className="search">
+                <form className="nav-search" action="/">
+                  <input type="text" placeholder="Zoek een preek..." name="search"></input>
+                  <button type="submit"><Icon id='search' icon="search" size="14px"/></button>
+                </form>
+              </div>
             </Col>
           </Row>
         </Container>
+        </div>
       </AppBar>
     </>
   );

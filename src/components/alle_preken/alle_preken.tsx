@@ -82,7 +82,7 @@ class alle_preken extends Component {
                                 <span id="count-results">21</span><p>resultaten</p> 
                             </div>
                         </Row>
-                        <Row>
+                        <Row className='prekenRow'>
                             <Preken />
                             <Preken />
                             <Preken />

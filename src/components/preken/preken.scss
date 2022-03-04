@@ -80,16 +80,30 @@
 }
 
 .date_preek {
-    span {
-        font-size: 13px;
-        color: #3C617D;
-    }
+    font-size: 13px;
+    color: #3C617D;
     #calendar_date {
         margin-right: 3px;
+        position: relative;
+        top: -1px;
     }
 }
 
 .detail {
     justify-content: flex-start;
     margin: 20px 0px 10px 0px;
+}
+
+@media (max-width:576px) {
+    .titel_preek_wrapper {
+        display: block;
+    }
+    .titel_preek ul li {
+        position: relative;
+        left: -11px;
+    }
+    .titel_preek ul li::before {
+        content: "";
+        margin-right: 0;
+    }
 }
