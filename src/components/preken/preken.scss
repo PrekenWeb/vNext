@@ -21,6 +21,10 @@
     color: #45BBAF;
 }
 
+.subtitle-preek {
+    font-size: 24px;
+}
+
 .titel_preek {
     display: flex;
     justify-content: space-between;
@@ -83,4 +87,9 @@
     #calendar_date {
         margin-right: 3px;
     }
+}
+
+.detail {
+    justify-content: flex-start;
+    margin: 20px 0px 10px 0px;
 }

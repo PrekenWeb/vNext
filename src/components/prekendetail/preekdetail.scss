@@ -1,0 +1,91 @@
+#root {
+    color: #114367;
+}
+
+.prekendetail-container {
+    padding: 30px 0px 70px 0px;
+    a {
+        text-decoration: none;
+        color: #1274BA;
+        font-weight: 600;
+        transition: 0.1s ease-in-out;
+        #arrow-left {
+            margin-right: 5px;
+            position: relative;
+            top: -1px;
+        }
+        &:hover {
+            color: #7C98AC;
+        }
+    }
+}
+
+.date_preek {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+h4 {
+    font-size: 22px;
+    color: #114367;
+}
+
+p {
+    font-size: 18px;
+    color: #114367;
+    font-weight: 400;
+}
+
+.content {
+    span {
+        margin-bottom: 10px;
+    }
+}
+
+.subtitle-wrapper {
+    .subtitle {
+        font-size: 12px;
+        font-weight: 00;
+        color: #7C98AC;
+    }
+    .subtitle-info {
+        font-size: 16px;
+        color: #114367;
+        margin-top: -5px;
+    }
+}
+
+.versnaam {
+    font-size: 16px;
+    font-weight: 600;
+    color: #114367;
+}
+
+.vers {
+    margin-top: 10px;
+}
+
+@media (max-width: 576px) {
+    .prekendetail-container {
+        padding-bottom: 20px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    .subtitle-preek {
+        font-size: 18px;
+    }
+    .info-preek {
+        display: flex;
+        flex-direction: column;
+    }
+    .preek_date {
+        display: flex;
+    }
+    .content {
+        border-top: 3px solid #E8EEF2;
+        border-bottom: 3px solid #E8EEF2;
+        padding: 40px 0px 20px 0px;
+        margin: 40px 0px;
+    }
+}

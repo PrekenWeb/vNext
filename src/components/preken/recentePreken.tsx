@@ -14,7 +14,7 @@ class recentePreken extends Component {
                 <Row>
                     <Col className='preken-top-col' xs={12} md={7} lg={7}>
                         <h2>Recente preken</h2>
-                        <Link to="/prekendetail"><Preken /></Link>
+                        <Preken />
                         <Preken />
                         <Preken />
                         <Preken />

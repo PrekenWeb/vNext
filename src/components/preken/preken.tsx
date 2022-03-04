@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Icon from '../../assets/icons/icon'
+import { Link } from "react-router-dom"
 
 import './preken.scss'
 
@@ -7,6 +8,7 @@ import './preken.scss'
 class preken extends Component {
     render() {
         return (
+            <Link to="/prekendetail">
             <div className='preek-wrapper'>
                     <div className="titel_preek">
                         <div className="titel_preek_wrapper">
@@ -29,6 +31,7 @@ class preken extends Component {
                     </div>
                 </div>
             </div>
+            </Link>
         );
     }
 }
