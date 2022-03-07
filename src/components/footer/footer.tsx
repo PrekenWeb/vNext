@@ -4,9 +4,6 @@ import './footer-responsive.scss'
 import { Container, Row, Col } from "react-bootstrap";
 import Nieuwsbrief from '../../assets/images/nieuwsbrief.png'
 import BackgroundFooter from '../../assets/images/background-footer.png'
-import ArrowForwardRoundedIcon from '@mui/icons-material/ArrowForwardRounded';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 import Icon from '../../assets/icons/icon'
 
 
@@ -18,7 +15,7 @@ class footer extends Component {
                 <Container className='footer-1'>
                         <Row>
                             <Col className='col-wrapper' xs={12} md={5} lg={5}>
-                                <img src={Nieuwsbrief} id="nieuwsbrief"></img>
+                                <img src={Nieuwsbrief} alt="inschrijven" id="nieuwsbrief"></img>
                             </Col>
                             <Col xs={12} md={5} lg={5}>
                                 <h2>Inschrijven nieuwsbrief</h2>

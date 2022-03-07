@@ -13,7 +13,7 @@ class uitgelicht extends Component {
                         <button className='slider-btn next'><Icon id="calendar" icon="arrow-right" size="19px"/></button>    
                     </div>
                     <div className="card-big-image">
-                        <img src={CardDummy} id="card_image"></img>
+                        <img src={CardDummy} alt="dummy" id="card_image"></img>
                     </div>
                 </div>
                 <div className="card-big-text">

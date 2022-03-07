@@ -17,7 +17,7 @@ class main extends Component {
                 <Container>
                      <Row>
                          <Col className='image-wrapper' xs={12} md={5} lg={5}>
-                         <img src={ImageMain} id="mainimage"></img>
+                         <img src={ImageMain} alt="main" id="mainimage"></img>
                          </Col>
                          <Col className='text-wrapper' xs={12} md={5} lg={5}>
                             <h1>Preken luisteren, lezen of downloaden</h1>

@@ -5,9 +5,9 @@ import Main from './components/main/main'
 import Artikelen from './components/artikelen/artikelen'
 import RecentePreken from './components/preken/recentePreken'
 import Header from './components/header/header'
-import Alle_Preken from './components/alle_preken/alle_preken'
+import AllePreken from './components/alle_preken/alle_preken'
 import PrekenDetail from './components/prekendetail/preekdetail'
-import { Routes, Route, Link } from "react-router-dom"
+import { Routes, Route } from "react-router-dom"
 
 const App: FC = () => {
   return (
@@ -37,7 +37,7 @@ function AllePrekenPagina() {
   return (
     <>
     <Header />
-      <Alle_Preken />
+      <AllePreken />
     <Footer />
     </>
   );

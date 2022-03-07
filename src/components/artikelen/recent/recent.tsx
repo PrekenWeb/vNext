@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './recent.scss'
-import { Container, Row, Col } from "react-bootstrap";
 import Icon from '../../../assets/icons/icon';
 import Placeholder from '../../../assets/images/250x170.png'
 
@@ -10,7 +9,7 @@ class recent extends Component {
             <>
                 <div className="card-recent">
                     <div className="card-recent-image">
-                        <img src={Placeholder} id="recent-image"></img>
+                        <img src={Placeholder} alt="placeholder" id="recent-image"></img>
                     </div>
                     <div className="card-recent-text">
                         <span className='date'><Icon id="calendar" icon="calendar" size="13px"/>15-12-2021</span>
