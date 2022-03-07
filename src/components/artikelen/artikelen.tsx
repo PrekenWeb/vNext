@@ -20,7 +20,7 @@ class artikelen extends Component {
                             <Row>
                                 <div className="recent">
                                     <h2>Recente berichten</h2>
-                                    <a href="#">Alle berichten <Icon id="arrowright" icon="arrow-right" size="13px"/></a>
+                                    <a href="#top">Alle berichten <Icon id="arrowright" icon="arrow-right" size="13px"/></a>
                                 </div>
                             </Row>
                             <Row className='top-row'>

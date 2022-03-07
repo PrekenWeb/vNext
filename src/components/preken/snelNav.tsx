@@ -6,8 +6,8 @@ class snelnav extends Component {
     render() {
         return (
             <div className='nav-wrapper'>
-                <a className="nav-link" href='#'>Lorum Ipsum Lorum  Ipsum Lorum Ipsum Lorum Ipsum</a>
-                <a href='#'><Icon id="arrow-right" icon="arrow-right" size="35px"/></a>
+                <a className="nav-link" href='#top'>Lorum Ipsum Lorum  Ipsum Lorum Ipsum Lorum Ipsum</a>
+                <a href='#top'><Icon id="arrow-right" icon="arrow-right" size="35px"/></a>
             </div>
         );
     }

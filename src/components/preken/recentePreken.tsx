@@ -19,7 +19,7 @@ class recentePreken extends Component {
                         <Preken />
                         <Preken />
                         <Preken />
-                        <Link to="/allepreken"><a href='#'>Alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></a></Link>
+                        <Link to="/allepreken">Alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></Link>
                     </Col>
                     <Col></Col>
                     <Col xs={12} md={4} lg={4}>

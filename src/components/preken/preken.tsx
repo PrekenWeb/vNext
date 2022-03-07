@@ -21,10 +21,10 @@ class preken extends Component {
                     </div>
                 <div className="info_preek">
                     <div className="labels_preek">
-                        <label><a href='#'><Icon id="music" icon="music" size="13px"/>Preek</a></label>
-                        <label><a href='#'><Icon id="info" icon="info" size="13px"/>Advent</a></label>
-                        <label><a href='#'><Icon id="user" icon="user" size="13px"/>Ds. J Driessen</a></label>
-                        <label className='serie'><a href='#'><Icon id="stack" icon="document-stack" size="13px"/>Advent serie (4)</a></label>
+                        <label><a href='#top'><Icon id="music" icon="music" size="13px"/>Preek</a></label>
+                        <label><a href='#top'><Icon id="info" icon="info" size="13px"/>Advent</a></label>
+                        <label><a href='#top'><Icon id="user" icon="user" size="13px"/>Ds. J Driessen</a></label>
+                        <label className='serie'><a href='#top'><Icon id="stack" icon="document-stack" size="13px"/>Advent serie (4)</a></label>
                         <span className="date_preek"><Icon id="calendar_date" icon="calendar" size="11px"/>15-12-2021</span>
                     </div>
                 </div>

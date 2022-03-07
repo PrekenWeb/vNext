@@ -42,22 +42,22 @@ class footer extends Component {
                             <h3>Meer PrekenWeb</h3>
                                 <div className="nav-links">
                                 <ul>
-                                    <li><a href="#">Preken</a></li>
-                                    <li><a href="#">Preek toevoegen</a></li>
-                                    <li><a href="#">Financieel bijdragen</a></li>
+                                    <li><a href="#top">Preken</a></li>
+                                    <li><a href="#top">Preek toevoegen</a></li>
+                                    <li><a href="#top">Financieel bijdragen</a></li>
                                 </ul>
                                 <ul className='bottom-nav-col'>
-                                    <li><a href="#">Kerken en overige links</a></li>
-                                    <li><a href="#">Hulp nodig?</a></li>
-                                    <li><a href="#">Contact</a></li>
+                                    <li><a href="#top">Kerken en overige links</a></li>
+                                    <li><a href="#top">Hulp nodig?</a></li>
+                                    <li><a href="#top">Contact</a></li>
                                 </ul>
                                 </div>
                                 
                             </Col>
                             <Col xs={12} lg={3} className="social-wrapper">
                                 <h3>PrekenWeb op Social</h3>
-                                <a href="#" className='social-links'><Icon icon="facebook" size="20px" /></a>
-                                <a href="#" className='social-links'><Icon icon="twitter" size="20px" /></a>
+                                <a href="#top" className='social-links'><Icon icon="facebook" size="20px" /></a>
+                                <a href="#top" className='social-links'><Icon icon="twitter" size="20px" /></a>
                             </Col>
                             <span id='copyright'>© Copyright 2022 PrekenWeb</span>
                         </Row>

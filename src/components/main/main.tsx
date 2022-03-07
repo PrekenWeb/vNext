@@ -22,7 +22,7 @@ class main extends Component {
                          <Col className='text-wrapper' xs={12} md={5} lg={5}>
                             <h1>Preken luisteren, lezen of downloaden</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac dignissim metus, vitae ullamcorper neque. Praesent ornare, nulla bibendum placerat, diam purus sodales augue.</p>
-                            <button className='button'><Link to="/allepreken"><a href='#'>Bekijk alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></a></Link></button>
+                            <button className='button'><Link to="/allepreken">Bekijk alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></Link></button>
                          </Col>
                         </Row>
                 </Container>

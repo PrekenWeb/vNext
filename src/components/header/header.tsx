@@ -1,15 +1,5 @@
 import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
-import Box from '@mui/material/Box';
-import Toolbar from '@mui/material/Toolbar';
-import IconButton from '@mui/material/IconButton';
-import Typography from '@mui/material/Typography';
-import Menu from '@mui/material/Menu';
-import MenuIcon from '@mui/icons-material/Menu';
-import Avatar from '@mui/material/Avatar';
-import Button from '@mui/material/Button';
-import Tooltip from '@mui/material/Tooltip';
-import MenuItem from '@mui/material/MenuItem';
 import './header.scss';
 import England from '../../assets/images/england.svg'
 import Logo from '../../assets/images/logo.svg';
@@ -19,23 +9,6 @@ import Icon from '../../assets/icons/icon'
 
 
 const Header = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
-  const [anchorElUser, setAnchorElUser] = React.useState(null);
-
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleOpenUserMenu = (event) => {
-    setAnchorElUser(event.currentTarget);
-  };
-
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
-
-  const handleCloseUserMenu = () => {
-    setAnchorElUser(null);
-  };
 
   return (
     <>
@@ -48,8 +21,8 @@ const Header = () => {
               </Col>
               <Col xs={7} lg={6}>
                 <ul className={"top-menu"}>
-                  <li><a href="#">Registreren</a></li>
-                  <li><a href="#">Mijn PrekenWeb<Icon id="user" icon="user" size="30px"/></a></li>
+                  <li><a href="#top">Registreren</a></li>
+                  <li><a href="#top">Mijn PrekenWeb<Icon id="user" icon="user" size="30px"/></a></li>
                 </ul>
               </Col>
             </Row>
@@ -66,7 +39,7 @@ const Header = () => {
               </div>
               <div className="menu-item-container">
                 <Link to="/allepreken" className={"menu-item lg"}><Icon className='list-icon' icon="list" size="15px"/>Alle preken</Link>
-                <Link to="#" className={"menu-item lg"}><Icon className='info-icon' icon="info" size="15px"/>Hulp & contact</Link>
+                <Link to="#top" className={"menu-item lg"}><Icon className='info-icon' icon="info" size="15px"/>Hulp & contact</Link>
                 <button className="menu menu-item"><Icon className='menu-icon' icon="menu" size="18px"/>Menu</button>
               </div>
             </Col>
