@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Icon from '../../assets/icons/icon'
 import Preken from '../preken/preken'
-import Accordion from 'react-bootstrap/Accordion'
 import './alle_preken.scss'
 
 import Checkbox from '@mui/material/Checkbox';
@@ -23,43 +22,45 @@ class alle_preken extends Component {
                             <div className="categories">
                                 <h4>Categorieën</h4>
                                 <form action=''>
-                                    <div className="catergorie audiopreken">
+                                    <div className="categorie audiopreken">
                                         <Checkbox {...label} />
                                         <label><Icon id="music" icon="music" size="13px"/>Audiopreken (<span>132</span>)</label>
                                     </div>
-                                    <div className="catergorie audioprekenvideo">
+                                    <div className="categorie audioprekenvideo">
                                         <Checkbox {...label} />
-                                        <label><Icon id="music" icon="music" size="13px"/>Audiopreken (<span>132</span>)</label>
+                                        <label><Icon id="video" icon="video" size="13px"/>Audiopreken met video (<span>34</span>)</label>
                                     </div>
-                                    <div className="catergorie leespreken">
+                                    <div className="categorie leespreken">
                                         <Checkbox {...label} />
-                                        <label><Icon id="music" icon="music" size="13px"/>Audiopreken (<span>132</span>)</label>
+                                        <label><Icon id="document" icon="document" size="13px"/>Leespreken (<span>12</span>)</label>
                                     </div>
-                                    <div className="catergorie lezingen">
+                                    <div className="categorie lezingen">
                                         <Checkbox {...label} />
-                                        <label><Icon id="music" icon="music" size="13px"/>Audiopreken (<span>132</span>)</label>
+                                        <label><Icon id="book" icon="book" size="13px"/>Lezingen(<span>24</span>)</label>
                                     </div>
-                                    <div className="catergorie meditatie">
+                                    <div className="categorie meditatie">
                                         <Checkbox {...label} /> 
-                                        <label><Icon id="music" icon="music" size="13px"/>Audiopreken (<span>132</span>)</label>
+                                        <label><Icon id="hearing" icon="hearing" size="13px"/>Meditaties (<span>7</span>)</label>
                                     </div>
-                                    <div className="catergorie series">
+                                    <div className="categorie series">
                                         <Checkbox {...label} />
-                                        <label><Icon id="music" icon="music" size="13px"/>Audiopreken (<span>132</span>)</label>
+                                        <label><Icon id="document-stack" icon="document-stack" size="13px"/>Series (<span>12</span>)</label>
                                     </div>
                                 </form>
                             </div>
                             <div className="filters">
                                 <h4>Filters</h4>
                                 <div className="labels">
-                                    <label>Genesis,Exodus, Psalmen <button><Icon id="close" icon="Close" size="12px"/></button></label>
-                                    <label>Kerst<button><Icon id="close" icon="Close" size="12px"/></button></label>
+                                    <label>Genesis,Exodus, Psalmen<button><Icon className="close" icon="Close" size="11px"/></button></label>
+                                    <label>Kerst<button><Icon className="close" icon="Close" size="11px"/></button></label>
                                 </div>
-                                <button id='filter-remove'><Icon id="close" icon="undo" size="12px"/>Filter wissen</button>
+                                <div className="remove-filter">
+                                    <button id='filter-remove'><Icon id='undo' icon="undo" size="14px"/>Filter wissen</button>
+                                </div>
                             </div>
                         </Row>
                         <Row>
-                            
+                            Hier komen de dropdowns
                         </Row>
                     </Col>
                     <Col xs={12} md={8} lg={8}>

@@ -1,39 +1,45 @@
 .card-big {
     height: 100%;
+    margin-top: -60px;
     width: auto;
-    background-color: white;
     border-radius: 8px;
-    cursor: pointer;
 }
 
-.slider-button {
-    width: 40px;
-    height: 60px;
-    background-color: #45BBAF;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
-    &:hover {
-        background-color: #1C5D76;
+.buttons {
+    z-index: 999;
+    position: relative;
+    top: 260px;
+    display: flex;
+    justify-content: space-between;
+    .slider-btn {
+        color: white;
+        border-radius: 3px;
+        box-shadow: 0px 3px 6px rgba($color: #000000, $alpha: 0.16);
+        width: 40px;
+        height: 60px;
+        background-color: #45BBAF;
+        border: none;
+        transition: 0.2s ease-in-out;
+        &:hover {
+            background-color: #1C5D76;
+        }
     }
-}
-
-.previous {
-    position: relative;
-    top: 244px;
-    left: -10px;
-}
-
-.next {
-    position: relative;
-    left: 519px;
-    top: -394px;
+    .previous {
+        position: relative;
+        left: -10px;
+    }
+    .next {
+        position: relative;
+        right: -10px;
+    }
 }
 
 .card-big-text {
     color: #114367;
+    background-color: white;
+    border-radius: 0px 0px 8px 8px;
     padding: 20px 30px 10px 30px;
+    cursor: pointer;
     .date {
         font-size: 13px;
         font-weight: 400;

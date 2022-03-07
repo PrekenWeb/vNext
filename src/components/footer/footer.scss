@@ -48,6 +48,9 @@
             height: 34px;
             border: none;
             border-radius: 3px;
+            &:focus {
+                outline: none;
+            }
         }
         span {
             font-size: 15px;

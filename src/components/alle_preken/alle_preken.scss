@@ -9,7 +9,7 @@
 }
 
 .categories {
-    margin-bottom: 20px;
+    margin-bottom: 50px;
 }
 
 .save-search {
@@ -89,5 +89,60 @@
 .prekenRow {
     a {
         text-decoration: none;
+    }
+}
+
+.categorie {
+    margin-left: -10px;
+    margin-bottom: -15px;
+    font-size: 14px;
+    #music,
+    #video,
+    #document,
+    #book,
+    #hearing,
+    #document-stack {
+        margin-right: 10px;
+    }
+}
+
+.filters {
+    .labels {
+        label {
+            background-color: #1274BA;
+            color: white;
+            font-size: 13px;
+            padding: 2px 7px;
+            border-radius: 4px;
+            margin-right: 10px;
+            button {
+                background-color: #1274BA;
+                color: white;
+                border: none;
+                .close {
+                    position: relative;
+                    margin-left: 3px;
+                    top: -1px;
+                }
+            }
+        }
+    }
+    .remove-filter {
+        border-bottom: 3px solid #E8EEF2;
+        margin: 7px 0px 30px 0px;
+        padding-bottom: 20px;
+    }
+    #filter-remove {
+        background-color: white;
+        border: none;
+        color: #1274BA;
+        font-size: 16px;
+        font-weight: 500;
+        #undo {
+            margin-right: 7px;
+        }
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
