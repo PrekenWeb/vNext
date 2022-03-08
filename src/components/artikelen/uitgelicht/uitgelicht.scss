@@ -79,6 +79,9 @@
     }
     
     @media (max-width: 576px) {
+        .card-big-image {
+            margin-top: 10px;
+        }
         .card-big-text {
             padding: 10px 20px 5px 20px;
         }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './recent.scss'
 import Icon from '../../../assets/icons/icon';
-import Placeholder from '../../../assets/images/250x170.png'
+import Placeholder from '../../../assets/images/260x180.png'
 
 class recent extends Component {
     render() {
