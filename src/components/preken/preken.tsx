@@ -1,23 +1,41 @@
 import React, { Component } from 'react';
 import Icon from '../../assets/icons/icon'
 import { Link } from "react-router-dom"
+import Checkbox from '@mui/material/Checkbox';
+import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
+import BookmarkIcon from '@mui/icons-material/Bookmark';
+
+
 
 import './preken.scss'
 
 
 class preken extends Component {
+    
     render() {
+        const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
         return (
-            <Link to="/prekendetail">
+
             <div className='preek-wrapper'>
                     <div className="titel_preek">
                         <div className="titel_preek_wrapper">
-                            <h4>De geboorte van de Heere Jezus</h4>
+                            <h4><Link to="/prekendetail" >De geboorte van de Heere Jezus</Link></h4>
                             <ul className='subtitel_preek'>
                                 <li>Jesaja 9:5b</li>
                             </ul>
                         </div>
-                        <div><Icon id="bookmark" icon="bookmark" size="18px"/></div>
+                        <div className="checkbox-container">
+                                <Checkbox
+                                {...label}
+                                icon={<BookmarkBorderIcon />}
+                                checkedIcon={<BookmarkIcon />}
+                                sx={{
+                                    color: "#45BBAF",
+                                    '&.Mui-checked': {
+                                    color: "#45BBAF",
+                                    },}}
+                                />
+                         </div>
                     </div>
                 <div className="info_preek">
                     <div className="labels_preek">
@@ -29,7 +47,7 @@ class preken extends Component {
                     </div>
                 </div>
             </div>
-            </Link>
+
         );
     }
 }

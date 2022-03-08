@@ -1,0 +1,38 @@
+.dropdown-wrapper {
+    border-bottom: 3px solid #E8EEF2;
+    padding: 15px 0px;
+}
+
+.dropdown-button {
+    display: flex;
+    align-items: center;
+    #arrow {
+        margin-left: -5px;
+    }
+    h6 {
+        position: relative;
+        top: 4px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+}
+
+.hiding {
+    margin-top: 5px;
+    .nav-search {
+        margin-bottom: 10px;
+        height: 40px;
+        input {
+            font-size: 14px;
+        }
+        #search {
+            scale: 0.8;
+        }
+    }
+}
+
+#arrow-down {
+    margin-right: 10px;
+    position: relative;
+    top: -3px;
+}

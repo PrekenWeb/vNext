@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import Icon from '../../assets/icons/icon'
 import Preken from '../preken/preken'
 import './alle_preken.scss'
+import Dropdown from '../accordion/dropdown';
 
 import Checkbox from '@mui/material/Checkbox';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -16,7 +17,7 @@ class alle_preken extends Component {
                 <Row>
                     <Col xs={12} md={4} lg={4}>
                         <Row>
-                            <div>
+                            <div className='save-container'>
                                 <button className='save-search'><Icon id="save" icon="save" size="12px"/>Zoekopdracht opslaan</button>
                             </div>
                             <div className="categories">
@@ -47,6 +48,7 @@ class alle_preken extends Component {
                                         <label><Icon id="document-stack" icon="document-stack" size="13px"/>Series (<span>12</span>)</label>
                                     </div>
                                 </form>
+                                <button className='filter-button'><Icon id="filtering" icon="filtering" size="22px"/>Filters</button>
                             </div>
                             <div className="filters">
                                 <h4>Filters</h4>
@@ -60,13 +62,14 @@ class alle_preken extends Component {
                             </div>
                         </Row>
                         <Row>
-                            Hier komen de dropdowns
+                            <div className="dropdown-container">
+                                <Dropdown></Dropdown></div>
                         </Row>
                     </Col>
                     <Col xs={12} md={8} lg={8}>
                         <Row>
                             <h1>Preken</h1>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac dignissim metus, vitae ullamcorper neque. Praesent ornare, nulla a bibendum placerat, diam purus sodales augue.</p>
+                            <p className='preken-tekst'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac dignissim metus, vitae ullamcorper neque. Praesent ornare, nulla a bibendum placerat, diam purus sodales augue.</p>
                         </Row>
                         <Row>
                             <div className="results-bar-wrapper">
@@ -84,11 +87,15 @@ class alle_preken extends Component {
                             </div>
                         </Row>
                         <Row className='prekenRow'>
-                            <Preken />
-                            <Preken />
-                            <Preken />
-                            <Preken />
-                            <Preken />
+                            <div>
+                                <Preken />
+                                <Preken />
+                                <Preken />
+                                <Preken />
+                                <Preken />
+                                <Preken />
+                                <Preken />
+                            </div>
                         </Row>
                     </Col>
                 </Row>
