@@ -2,6 +2,10 @@
     color: #114367;
 }
 
+.informatie-col h4 {
+    margin-top: 10px;
+}
+
 .prekendetail-container {
     padding: 30px 0px 70px 0px;
     a {
@@ -22,6 +26,7 @@
 
 .date_preek {
     font-size: 14px;
+    float: none;
     font-weight: 300;
 }
 
@@ -86,6 +91,18 @@ p {
         border-top: 3px solid #E8EEF2;
         border-bottom: 3px solid #E8EEF2;
         padding: 40px 0px 20px 0px;
-        margin: 40px 0px;
+        margin: 40px 0px 25px 0px;
+    }
+    .date_preek {
+        float: none;
+    }
+    .slider-container .volume-slider .timer .timings {
+        font-size: 12px;
+        display: block;
+        width: 65px;
+        margin-left: 5px;
+    }
+    .subtitle-wrapper {
+        margin-bottom: -10px;
     }
 }

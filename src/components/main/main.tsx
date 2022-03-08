@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Icon from '../../assets/icons/icon'
 import { Container, Row, Col } from "react-bootstrap";
 import './main.scss'
-import './main-responsive.scss'
 import BackgroundMain from '../../assets/images/background-header.png'
 import ImageMain from '../../assets/images/illustratie.png'
 import { Link } from 'react-router-dom'

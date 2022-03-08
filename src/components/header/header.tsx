@@ -31,7 +31,7 @@ const Header = () => {
         <div className="top-bar-2">
         <Container>
           <Row>
-            <Col className="header-container" xs={12} md={12} lg={12}  xl={6}> 
+            <Col className="header-container" xs={12} lg={7}> 
               <div className="logo">
                 <Link to="/">
                   <img src={Logo} alt="" />
@@ -43,11 +43,11 @@ const Header = () => {
                 <button className="menu menu-item"><Icon className='menu-icon' icon="menu" size="18px"/>Menu</button>
               </div>
             </Col>
-            <Col className="search-container" xs={12} md={12} lg={12} xl={6}>
+            <Col className="search-container" xs={12} lg={5}>
               <div className="search">
                 <form className="nav-search" action="/">
                   <input type="text" placeholder="Zoek een preek..." name="search"></input>
-                  <button type="submit"><Icon id='search' icon="search" size="14px"/></button>
+                  <button type="submit"><Icon id='search' icon="search" size="20px"/></button>
                 </form>
               </div>
             </Col>

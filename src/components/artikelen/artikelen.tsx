@@ -11,7 +11,7 @@ class artikelen extends Component {
         return (
             <div className='artikelen-wrapper'>
                 <Container>
-                    <Row>
+                    <Row className='title-row'>
                         <Col className="uitgelicht" xs={12} md={6} lg={6}>
                             <h2>Uitgelicht</h2>
                             <Uitgelicht />

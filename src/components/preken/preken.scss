@@ -1,109 +1,120 @@
-.preek-wrapper {
-    padding: 20px 20px;
-    border-radius: 6px;
-    box-shadow: 0px 3px 2px #C6DDEE;
-    margin-bottom: 15px;
-    border: 1px solid transparent;
-    transition: 0.1s ease-in-out;
-    cursor: pointer;
-    &:hover {
-        border: 1px solid #114367;
-    }
-}
-
-.titel_preek_wrapper {
-    display: flex;
-    margin-bottom: 10px;
-}
-
-#bookmark {
-    float: right;
-    color: #45BBAF;
-}
-
-.subtitle-preek {
-    font-size: 24px;
-}
-
-.titel_preek {
-    display: flex;
-    justify-content: space-between;
-    color: #114367;
-    margin-bottom: -15px;
-    h4 {
-        font-size: 16px;
-        font-weight: 500;
-        line-height: 20px;
-        margin-left: 0;
-    }
-    ul {
-        font-size: 10px;
-        font-weight: 300;
-        line-height: 20px;
-        list-style: none;
-        li {
-            font-size: 16px;
-            margin-left: -20px;
-            &::before {
-                content: "•";
-                font-size: 10pt;
-                margin-right: 10px;
+            .preek-wrapper {
+                padding: 20px 20px;
+                border-radius: 6px;
+                box-shadow: 0px 3px 2px #C6DDEE;
+                margin-bottom: 15px;
+                border: 1px solid transparent;
+                transition: 0.1s ease-in-out;
+                cursor: pointer;
+                &:hover {
+                    border: 1px solid #114367;
+                }
             }
-        }
-    }
-}
-
-.info_preek {
-    display: flex;
-    justify-content: space-between;
-    .labels_preek {
-        label {
-            margin-right: 15px;
-        }
-        a {
-            text-decoration: none;
-            font-size: 13px;
-            font-weight: 300;
-            color: #3C617D;
-            &:hover {
-                text-decoration: underline;
-                color: #1274BA;
+            
+            .titel_preek_wrapper {
+                display: flex;
+                margin-bottom: 10px;
             }
-        }
-        #music,
-        #info,
-        #user,
-        #stack {
-            margin-right: 4px;
-        }
-    }
-}
-
-.date_preek {
-    font-size: 13px;
-    color: #3C617D;
-    #calendar_date {
-        margin-right: 3px;
-        position: relative;
-        top: -1px;
-    }
-}
-
-.detail {
-    justify-content: flex-start;
-    margin: 20px 0px 10px 0px;
-}
-
-@media (max-width:576px) {
-    .titel_preek_wrapper {
-        display: block;
-    }
-    .titel_preek ul li {
-        position: relative;
-        left: -11px;
-    }
-    .titel_preek ul li::before {
-        content: "";
-        margin-right: 0;
-    }
-}
+            
+            #bookmark {
+                float: right;
+                color: #45BBAF;
+            }
+            
+            .subtitle-preek {
+                font-size: 24px;
+            }
+            
+            .titel_preek {
+                display: flex;
+                justify-content: space-between;
+                color: #114367;
+                margin-bottom: -15px;
+                h4 {
+                    font-size: 16px;
+                    font-weight: 500;
+                    line-height: 20px;
+                    margin-left: 0;
+                }
+                ul {
+                    font-size: 10px;
+                    font-weight: 300;
+                    line-height: 20px;
+                    list-style: none;
+                    li {
+                        font-size: 16px;
+                        margin-left: -25px;
+                        &::before {
+                            content: "•";
+                            font-size: 12pt;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            
+            .info_preek {
+                display: flex;
+                justify-content: space-between;
+                .labels_preek {
+                    width: 100%;
+                    .preek {
+                        float: right;
+                    }
+                    label {
+                        margin-right: 15px;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-size: 13px;
+                        font-weight: 300;
+                        color: #3C617D;
+                        &:hover {
+                            text-decoration: underline;
+                            color: #1274BA;
+                        }
+                    }
+                    #music,
+                    #info,
+                    #user,
+                    #stack {
+                        margin-right: 4px;
+                    }
+                }
+            }
+            
+            .date_preek {
+                font-size: 13px;
+                color: #3C617D;
+                #calendar_date {
+                    margin-right: 3px;
+                    position: relative;
+                    top: -1px;
+                }
+            }
+            
+            .detail {
+                justify-content: flex-start;
+                margin: 20px 0px 10px 0px;
+            }
+            
+            @media (max-width:576px) {
+                .titel_preek_wrapper {
+                    display: block;
+                }
+                .titel_preek ul li {
+                    position: relative;
+                    left: -11px;
+                }
+                .titel_preek ul li::before {
+                    content: "";
+                    margin-right: 0;
+                }
+                .info_preek {
+                    .labels_preek {
+                        .preek {
+                            float: none;
+                        }
+                    }
+                }
+            }

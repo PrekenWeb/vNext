@@ -19,10 +19,10 @@ class recentePreken extends Component {
                         <Preken />
                         <Preken />
                         <Preken />
-                        <Link to="/allepreken">Alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></Link>
+                        <Link to="/allepreken" className='allepreken'>Alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></Link>
                     </Col>
                     <Col></Col>
-                    <Col xs={12} md={4} lg={4}>
+                    <Col className="preken-bot-col" xs={12} md={4} lg={4}>
                         <h2><Icon id="fast" icon="fast-to" size="20px"/> Snel naar</h2>
                         <SnelNav />
                         <SnelNav />

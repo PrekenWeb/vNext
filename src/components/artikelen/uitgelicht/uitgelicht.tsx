@@ -9,8 +9,8 @@ class uitgelicht extends Component {
             <div>
                 <div className="card-big">
                     <div className="buttons">
-                        <button className='slider-btn previous'><Icon id="calendar" icon="arrow-left" size="19px"/></button>    
-                        <button className='slider-btn next'><Icon id="calendar" icon="arrow-right" size="19px"/></button>    
+                        <button className='slider-btn previous'><Icon id="left" icon="arrow-left" size="19px"/></button>    
+                        <button className='slider-btn next'><Icon id="right" icon="arrow-right" size="19px"/></button>    
                     </div>
                     <div className="card-big-image">
                         <img src={CardDummy} alt="dummy" id="card_image"></img>

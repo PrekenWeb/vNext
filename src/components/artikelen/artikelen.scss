@@ -1,64 +1,67 @@
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet');
-    * {
-        font-family: 'Fira Sans', sans-serif;
+.top-row {
+    margin-bottom: 25px;
+}
+
+.recent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 700;
+        position: relative;
+        top: -3px;
+        color: #88B9DC;
+        &:hover {
+            color: #0AC7E5;
+        }
     }
-    
-    .top-row {
+}
+
+.artikelen-wrapper {
+    background-color: #114367;
+    height: 100%;
+    color: white;
+    padding: 80px 0px 80px 0px;
+    h2 {
+        font-size: 26px;
+        line-height: 28px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .uitgelicht {
+        margin-bottom: 30px;
+    }
+    .top-col {
         margin-bottom: 25px;
     }
-    
-    .recent {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        a {
-            text-decoration: none;
-            color: #88B9DC;
-            &:hover {
-                color: #0AC7E5;
-            }
-        }
-    }
-    
+}
+
+@media (max-width: 576px) {
     .artikelen-wrapper {
-        background-color: #114367;
-        height: 100%;
-        color: white;
-        padding: 80px 0px 40px 0px;
+        padding: 30px 0px 30px 0px;
         h2 {
-            font-size: 26px;
-            line-height: 28px;
-            font-weight: 700;
+            font-size: 20px;
         }
     }
-    
-    @media (max-width: 768px) {
-        .uitgelicht {
-            margin-bottom: 30px;
-        }
-        .top-col {
-            margin-bottom: 25px;
-        }
+    .uitgelicht {
+        margin-bottom: 30px;
     }
-    
-    @media (max-width: 576px) {
-        .artikelen-wrapper {
-            padding: 40px 0px 40px 0px;
-            h2 {
-                font-size: 20px;
-            }
-        }
-        .uitgelicht {
-            margin-bottom: 30px;
-        }
-        .top-col {
-            margin-bottom: 25px;
-        }
-        .recent {
-            display: block;
-            margin: 20px 0px;
-        }
-        .uitgelicht-wrapper {
-            padding: 40px 0px 40px 0px;
-        }
+    .top-col {
+        margin-bottom: 25px;
     }
+    .recent {
+        display: block;
+        margin: 20px 0px;
+    }
+    .uitgelicht-wrapper {
+        padding: 40px 0px 40px 0px;
+    }
+    .recent {
+        margin-bottom: 10px;
+    }
+}
