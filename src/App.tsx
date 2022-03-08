@@ -9,6 +9,7 @@ import AllePreken from './components/alle_preken/alle_preken'
 import PrekenDetail from './components/prekendetail/preekdetail'
 import { Routes, Route } from "react-router-dom"
 
+
 const App: FC = () => {
   return (
     <div className="App">

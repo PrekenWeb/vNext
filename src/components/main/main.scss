@@ -75,6 +75,12 @@
     }
 }
 
+@media (max-width: 768px) {
+    .text-wrapper {
+        padding-top: 0px;
+    }
+}
+
 @media (max-width: 576px) {
     #backgroundmain {
         background-size: cover;
@@ -85,6 +91,7 @@
         margin-bottom: -50px;
     }
     .text-wrapper {
+        padding-top: 50px;
         h1 {
             font-size: 26px;
             line-height: 32px;

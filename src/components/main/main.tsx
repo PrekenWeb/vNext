@@ -3,7 +3,7 @@ import Icon from '../../assets/icons/icon'
 import { Container, Row, Col } from "react-bootstrap";
 import './main.scss'
 import BackgroundMain from '../../assets/images/background-header.png'
-import ImageMain from '../../assets/images/illustratie.png'
+import ImageMain from '../../assets/images/illustratie.svg'
 import { Link } from 'react-router-dom'
 
 

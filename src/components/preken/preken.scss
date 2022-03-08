@@ -38,6 +38,12 @@
                     color: #114367;
                 }
                 h4 {
+                    a {
+                        color: #114367;
+                        &:hover {
+                            color: #114367;
+                        }
+                    }
                     font-size: 16px;
                     font-weight: 500;
                     line-height: 20px;

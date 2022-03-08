@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './footer.scss'
 import './footer-responsive.scss'
 import { Container, Row, Col } from "react-bootstrap";
-import Nieuwsbrief from '../../assets/images/nieuwsbrief.png'
+import Nieuwsbrief from '../../assets/images/nieuwsbrief.svg'
 import BackgroundFooter from '../../assets/images/background-footer.png'
 import Icon from '../../assets/icons/icon'
 

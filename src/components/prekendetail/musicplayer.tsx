@@ -33,6 +33,14 @@ class musicplayer extends Component {
                                 <button className='action-button'><Icon id="bookmark2" icon="bookmark" size="18px"/>Opslaan</button>
                                 <button className='action-button share'><Icon id="share" icon="share" size="18px"/>Delen</button>
                             </div>
+                            
+                        </div>
+                        <div className="share-collapse hide">
+                            <div className="share-item"><Icon id="mail" icon="mail" size="13px"/>E-mail</div>
+                            <div className="share-item"><Icon id="whatsapp" icon="whatsapp" size="13px"/>WhatsApp</div>
+                            <div className="share-item"><Icon id="facebook" icon="facebook" size="13px"/>Facebook</div>
+                            <div className="share-item"><Icon id="twitter" icon="twitter" size="13px"/>Twitter</div>
+                            <div className="share-item"><Icon id="linkedin" icon="linkedin" size="13px"/>LinkedIn</div>
                         </div>
             </div>
         );
