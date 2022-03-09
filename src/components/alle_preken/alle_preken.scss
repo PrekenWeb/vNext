@@ -17,6 +17,14 @@
     
     .categories {
         margin-bottom: 40px;
+        label {
+            cursor: pointer;
+            &:hover,
+            &:checked {
+                text-decoration: underline;
+                color: #1274BA;
+            }
+        }
     }
     
     .save-search {
@@ -119,6 +127,7 @@
         .labels {
             label {
                 background-color: #1274BA;
+                cursor: pointer;
                 color: white;
                 font-size: 13px;
                 padding: 2px 7px;

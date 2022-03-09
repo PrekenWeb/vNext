@@ -6,9 +6,9 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
-import './dropdown.scss'
+import '../dropdown.scss'
 import { useState } from 'react';
-import Icon from '../../assets/icons/icon'
+import Icon from '../../../assets/icons/icon';
 import { ExpandMoreOutlined } from '@mui/icons-material';
 
 function Dropdown() {

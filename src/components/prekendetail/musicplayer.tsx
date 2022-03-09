@@ -31,16 +31,20 @@ class musicplayer extends Component {
                             <div className="action-icons">
                                 <button className='action-button'><Icon id="download" icon="download" size="18px"/>Download</button>
                                 <button className='action-button'><Icon id="bookmark2" icon="bookmark" size="18px"/>Opslaan</button>
+                                <div className="delen-wrapper">
                                 <button className='action-button share'><Icon id="share" icon="share" size="18px"/>Delen</button>
+                                <div className="popover-content">
+                                    <p className="popover-message">
+                                        <div className="mail"><a href='#top'><Icon id="share" icon="mail" size="13px"/>E-mail</a></div>
+                                        <div className="whatsapp"><a href='#top'><Icon id="share" icon="whatsapp" size="13px"/>Whatsapp</a></div>
+                                        <div className="facebook"><a href='#top'><Icon id="share" icon="facebook" size="13px"/>Facebook</a></div>
+                                        <div className="twitter"><a href='#top'><Icon id="share" icon="twitter" size="13px"/>Twitter</a></div>        
+                                        <div className="linkedin"><a href='#top'><Icon id="linkedin" icon="linkedin" size="12px"/>LinkedIn</a></div>        
+                                    </p>
+                                </div>
+                            </div>
                             </div>
                             
-                        </div>
-                        <div className="share-collapse hide">
-                            <div className="share-item"><Icon id="mail" icon="mail" size="13px"/>E-mail</div>
-                            <div className="share-item"><Icon id="whatsapp" icon="whatsapp" size="13px"/>WhatsApp</div>
-                            <div className="share-item"><Icon id="facebook" icon="facebook" size="13px"/>Facebook</div>
-                            <div className="share-item"><Icon id="twitter" icon="twitter" size="13px"/>Twitter</div>
-                            <div className="share-item"><Icon id="linkedin" icon="linkedin" size="13px"/>LinkedIn</div>
                         </div>
             </div>
         );

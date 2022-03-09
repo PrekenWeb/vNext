@@ -6,16 +6,16 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
-import './dropdown.scss'
+import '../dropdown.scss'
 import { useState } from 'react';
 import { ExpandMoreOutlined } from '@mui/icons-material';
-import Icon from '../../assets/icons/icon';
-import './predikant.scss'
+import Icon from '../../../assets/icons/icon';
+import './items.scss'
 
 import Checkbox from '@mui/material/Checkbox';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
-function Lezing() {
+function Bijbelboek() {
     const [rotateIcon, setRotateIcon] = useState(false);
     const handleRotate = () => setRotateIcon(!rotateIcon);
     const rotate = rotateIcon ? "rotate(180deg)" : "rotate(0)";
@@ -26,23 +26,20 @@ function Lezing() {
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton className='dropdown-button' onClick={handleRotate}>
-                            <ExpandMoreOutlined id="arrow" style={{ transform: rotate, transition: "all 0.2s linear" }} onClick={handleRotate} /><h6>Lezing catergorie</h6>
+                            <ExpandMoreOutlined id="arrow" style={{ transform: rotate, transition: "all 0.2s linear" }} onClick={handleRotate} /><h6>Bijbelboek</h6>
                         </AccordionItemButton>
                     </AccordionItemHeading>
                         <AccordionItemPanel className='hiding'>
-                            <div className="categorie predikant">
-                                <Checkbox {...label} />
-                                <label>Lezing 1</label>
+                            <div className="categorie">
+                                <label><Checkbox {...label} defaultChecked/>Genesis</label>
                             </div>
-                            <div className="categorie predikant">
-                                <Checkbox {...label} defaultChecked/>
-                                <label>Lezing 2</label>
+                            <div className="categorie">
+                                <label><Checkbox {...label} defaultChecked/>Exodus</label>
                             </div>
-                            <div className="categorie predikant">
-                                <Checkbox {...label}/>
-                                <label>Lezing 3</label>
+                            <div className="categorie">
+                                <label><Checkbox {...label}/>Leviticus</label>
                             </div>
-                            <div className="categorie optiesall predikant">
+                            <div className="categorie optiesall">
                                 <a href='#top'><Icon id="large-arrow-down" icon="large-arrow-down" size="13px"/>Alle opties</a>
                             </div>
                         </AccordionItemPanel>
@@ -52,4 +49,4 @@ function Lezing() {
     );
   }
   
-  export default Lezing;
+  export default Bijbelboek;

@@ -6,16 +6,16 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
-import './dropdown.scss'
+import '../dropdown.scss'
 import { useState } from 'react';
 import { ExpandMoreOutlined } from '@mui/icons-material';
-import Icon from '../../assets/icons/icon';
-import './predikant.scss'
+import Icon from '../../../assets/icons/icon';
+import './items.scss'
 
 import Checkbox from '@mui/material/Checkbox';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
-function Gelegenheid() {
+function Gemeente() {
     const [rotateIcon, setRotateIcon] = useState(false);
     const handleRotate = () => setRotateIcon(!rotateIcon);
     const rotate = rotateIcon ? "rotate(180deg)" : "rotate(0)";
@@ -26,31 +26,20 @@ function Gelegenheid() {
                 <AccordionItem>
                     <AccordionItemHeading>
                         <AccordionItemButton className='dropdown-button' onClick={handleRotate}>
-                            <ExpandMoreOutlined id="arrow" style={{ transform: rotate, transition: "all 0.2s linear" }} onClick={handleRotate} /><h6>Gelegenheid</h6>
+                            <ExpandMoreOutlined id="arrow" style={{ transform: rotate, transition: "all 0.2s linear" }} onClick={handleRotate} /><h6>Gemeente</h6>
                         </AccordionItemButton>
                     </AccordionItemHeading>
                         <AccordionItemPanel className='hiding'>
-                            <div className="categorie predikant">
-                                <Checkbox {...label} />
-                                <label>Pinksteren</label>
+                            <div className="categorie">
+                                <label><Checkbox {...label} />Gemeente 1</label>
                             </div>
-                            <div className="categorie predikant">
-                                <Checkbox {...label} />
-                                <label>Pasen</label>
+                            <div className="categorie">
+                                <label><Checkbox {...label} defaultChecked/>Gemeente 2</label>
                             </div>
-                            <div className="categorie predikant">
-                                <Checkbox {...label} defaultChecked/>
-                                <label>Kerst</label>
+                            <div className="categorie">
+                                <label><Checkbox {...label}/>Gemeente 3</label>
                             </div>
-                            <div className="categorie predikant">
-                                <Checkbox {...label}/>
-                                <label>Advent</label>
-                            </div>
-                            <div className="categorie predikant">
-                                <Checkbox {...label}/>
-                                <label>Bijzondere tijden</label>
-                            </div>
-                            <div className="categorie optiesall predikant">
+                            <div className="categorie optiesall">
                                 <a href='#top'><Icon id="large-arrow-down" icon="large-arrow-down" size="13px"/>Alle opties</a>
                             </div>
                         </AccordionItemPanel>
@@ -60,4 +49,4 @@ function Gelegenheid() {
     );
   }
   
-  export default Gelegenheid;
+  export default Gemeente;

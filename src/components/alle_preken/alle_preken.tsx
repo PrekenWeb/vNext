@@ -24,28 +24,22 @@ class alle_preken extends Component {
                                 <h4>Categorieën</h4>
                                 <form action=''>
                                     <div className="categorie audiopreken">
-                                        <Checkbox {...label} />
-                                        <label><Icon id="music" icon="music" size="13px"/>Audiopreken (<span>132</span>)</label>
+                                        <label> <Checkbox {...label} /><Icon id="music" icon="music" size="13px"/>Audiopreken (<span>132</span>)</label>
                                     </div>
                                     <div className="categorie audioprekenvideo">
-                                        <Checkbox {...label} />
-                                        <label><Icon id="video" icon="video" size="13px"/>Audiopreken met video (<span>34</span>)</label>
+                                        <label> <Checkbox {...label} /><Icon id="video" icon="video" size="13px"/>Audiopreken met video (<span>34</span>)</label>
                                     </div>
                                     <div className="categorie leespreken">
-                                        <Checkbox {...label} />
-                                        <label><Icon id="document" icon="document" size="13px"/>Leespreken (<span>12</span>)</label>
+                                        <label><Checkbox {...label} /><Icon id="document" icon="document" size="13px"/>Leespreken (<span>12</span>)</label>
                                     </div>
                                     <div className="categorie lezingen">
-                                        <Checkbox {...label} />
-                                        <label><Icon id="book" icon="book" size="13px"/>Lezingen(<span>24</span>)</label>
+                                        <label><Checkbox {...label} /><Icon id="book" icon="book" size="13px"/>Lezingen(<span>24</span>)</label>
                                     </div>
                                     <div className="categorie meditatie">
-                                        <Checkbox {...label} /> 
-                                        <label><Icon id="hearing" icon="hearing" size="13px"/>Meditaties (<span>7</span>)</label>
+                                        <label><Checkbox {...label} /><Icon id="hearing" icon="hearing" size="13px"/>Meditaties (<span>7</span>)</label>
                                     </div>
                                     <div className="categorie series">
-                                        <Checkbox {...label} />
-                                        <label><Icon id="document-stack" icon="document-stack" size="13px"/>Series (<span>12</span>)</label>
+                                        <label><Checkbox {...label} /><Icon id="document-stack" icon="document-stack" size="13px"/>Series (<span>12</span>)</label>
                                     </div>
                                 </form>
                                 <button className='filter-button'><Icon id="filtering" icon="filtering" size="22px"/>Filters</button>

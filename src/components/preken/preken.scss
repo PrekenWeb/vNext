@@ -115,10 +115,21 @@
                 .filters .labels label {
                     margin-top: 5px;
                 }
+                .titel_preek_wrapper {
+                    display: block;
+                    margin-bottom: 10px;
+                }
+                .titel_preek ul li {
+                    position: relative;
+                    left: -11px;
+                    &::before {
+                        content: "";
+                    }
+                }
                 .info_preek {
                     .labels_preek {
                         .preek {
-                            float: left;
+                            float: right;
                         }
                     }
                 }

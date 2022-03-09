@@ -13,3 +13,11 @@
         margin: 0px 5px 0px 0px;
     }
 }
+
+.categorie label {
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+        color: #1274BA;
+    }
+}

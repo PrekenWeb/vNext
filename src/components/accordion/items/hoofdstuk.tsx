@@ -6,11 +6,11 @@ import {
     AccordionItemButton,
     AccordionItemPanel,
 } from 'react-accessible-accordion';
-import './dropdown.scss'
+import '../dropdown.scss'
 import { useState } from 'react';
 import { ExpandMoreOutlined } from '@mui/icons-material';
-import Icon from '../../assets/icons/icon';
-import './predikant.scss'
+import Icon from '../../../assets/icons/icon';
+import './items.scss'
 
 import Checkbox from '@mui/material/Checkbox';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -30,19 +30,16 @@ function Hoofdstuk() {
                         </AccordionItemButton>
                     </AccordionItemHeading>
                         <AccordionItemPanel className='hiding'>
-                            <div className="categorie predikant">
-                                <Checkbox {...label} />
-                                <label>H1</label>
+                            <div className="categorie">
+                                <label><Checkbox {...label} />H1</label>
                             </div>
-                            <div className="categorie predikant">
-                                <Checkbox {...label} defaultChecked/>
-                                <label>H2</label>
+                            <div className="categorie">
+                                <label><Checkbox {...label} defaultChecked/>H2</label>
                             </div>
-                            <div className="categorie predikant">
-                                <Checkbox {...label}/>
-                                <label>H3</label>
+                            <div className="categorie">
+                                <label><Checkbox {...label}/>H3</label>
                             </div>
-                            <div className="categorie optiesall predikant">
+                            <div className="categorie optiesall">
                                 <a href='#top'><Icon id="large-arrow-down" icon="large-arrow-down" size="13px"/>Alle opties</a>
                             </div>
                         </AccordionItemPanel>

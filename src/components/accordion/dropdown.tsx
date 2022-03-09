@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Zoekterm from './zoekterm';
-import Predikant from './predikant';
-import Bijbelboek from './bijbelboek';
-import Hoofdstuk from './hoofdstuk';
-import Gelegenheid from './gelegenheid';
-import Lezing from './lezing';
-import Gemeente from './gemeente';
-import Serie from './serie';
+import Zoekterm from './items/zoekterm';
+import Predikant from './items/predikant';
+import Bijbelboek from './items/bijbelboek';
+import Hoofdstuk from './items/hoofdstuk';
+import Gelegenheid from './items/gelegenheid';
+import Lezing from './items/lezing';
+import Gemeente from './items/gemeente';
+import Serie from './items/serie';
 
 class dropdown extends Component {
     render() {
