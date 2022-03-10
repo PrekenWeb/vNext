@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import Preken from './preken'
-import SnelNav from './snelNav'
+import Preek from '../../../components/preek/preek';
 import { Container, Row, Col } from "react-bootstrap";
-import Icon from '../../assets/icons/icon'
-import './recentePreken.scss'
+import Icon from '../../../assets/icons/icon';
+import FastNav from '../../../components/fast-nav/fastNav';
+import './recentSection.scss'
 import { Link } from "react-router-dom"
 
-class recentePreken extends Component {
+class recentSection extends Component {
     render() {
         return (
             <div className='recente-preken'>
@@ -14,25 +14,25 @@ class recentePreken extends Component {
                 <Row>
                     <Col className='preken-top-col' xs={12} md={7} lg={7}>
                         <h2>Recente preken</h2>
-                        <Preken />
-                        <Preken />
-                        <Preken />
-                        <Preken />
-                        <Preken />
+                        <Preek />
+                        <Preek />
+                        <Preek />
+                        <Preek />
+                        <Preek />
                         <Link to="/allepreken" className='allepreken'>Alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></Link>
                     </Col>
                     <Col></Col>
                     <Col className="preken-bot-col" xs={12} md={4} lg={4}>
                         <h2><Icon id="fast" icon="fast-to" size="20px"/> Snel naar</h2>
-                        <SnelNav />
-                        <SnelNav />
-                        <SnelNav />
-                        <SnelNav />
-                        <SnelNav />
-                        <SnelNav />
-                        <SnelNav />
-                        <SnelNav />
-                        <SnelNav />
+                        <FastNav />
+                        <FastNav />
+                        <FastNav />
+                        <FastNav />
+                        <FastNav />
+                        <FastNav />
+                        <FastNav />
+                        <FastNav />
+                        <FastNav />
                     </Col>
                 </Row>
             </Container>
@@ -41,4 +41,4 @@ class recentePreken extends Component {
     }
 }
 
-export default recentePreken;
+export default recentSection;

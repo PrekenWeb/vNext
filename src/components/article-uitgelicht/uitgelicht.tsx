@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './uitgelicht.scss'
-import Icon from '../../../assets/icons/icon'
-import CardDummy from '../../../assets/images/card-dummy.png'
+import Icon from '../../assets/icons/icon';
+import CardDummy from '../../assets/images/card-dummy.png'
 
 class uitgelicht extends Component {
     render() {

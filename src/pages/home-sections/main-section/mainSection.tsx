@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import Icon from '../../assets/icons/icon'
+import Icon from '../../../assets/icons/icon'
 import { Container, Row, Col } from "react-bootstrap";
-import './main.scss'
-import BackgroundMain from '../../assets/images/background-header.png'
-import ImageMain from '../../assets/images/illustratie.svg'
+import './mainSection.scss'
+import BackgroundMain from '../../../assets/images/background-header.png'
+import ImageMain from '../../../assets/images/illustratie.svg'
 import { Link } from 'react-router-dom'
 
-
-
-class main extends Component {
+class mainSection extends Component {
     render() {
         return (
             <>
@@ -21,7 +19,7 @@ class main extends Component {
                          <Col className='text-wrapper' xs={12} md={5} lg={5}>
                             <h1>Preken luisteren, lezen of downloaden</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac dignissim metus, vitae ullamcorper neque. Praesent ornare, nulla bibendum placerat, diam purus sodales augue.</p>
-                            <button className='button'><Link to="/allepreken">Bekijk alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></Link></button>
+                            <button className='button'><Link to="/preken">Bekijk alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></Link></button>
                          </Col>
                         </Row>
                 </Container>
@@ -31,4 +29,4 @@ class main extends Component {
     }
 }
 
-export default main;
+export default mainSection;

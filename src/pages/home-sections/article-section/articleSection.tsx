@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
-import Icon from '../../assets/icons/icon'
-import './artikelen.scss'
-import Uitgelicht from './uitgelicht/uitgelicht'
-import Recent from './recent/recent'
+import Icon from '../../../assets/icons/icon';
+import './articleSection.scss'
+import Uitgelicht from '../../../components/article-uitgelicht/uitgelicht';
+import Recent from '../../../components/article-recent/recent';
 
 
-class artikelen extends Component {
+class articleSection extends Component {
     render() {
         return (
             <div className='artikelen-wrapper'>
@@ -47,4 +47,4 @@ class artikelen extends Component {
     }
 }
 
-export default artikelen;
+export default articleSection;

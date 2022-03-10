@@ -38,7 +38,7 @@ const Header = () => {
                 </Link>
               </div>
               <div className="menu-item-container">
-                <Link to="/allepreken" className={"menu-item lg"}><Icon className='list-icon' icon="list" size="15px"/>Alle preken</Link>
+                <Link to="/preken" className={"menu-item lg"}><Icon className='list-icon' icon="list" size="15px"/>Alle preken</Link>
                 <Link to="#top" className={"menu-item lg"}><Icon className='info-icon' icon="info" size="15px"/>Hulp & contact</Link>
                 <button className="menu menu-item"><Icon className='menu-icon' icon="menu" size="18px"/>Menu</button>
               </div>

@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Icon from '../../assets/icons/icon'
-import './preekdetail.scss'
+import './preek-section.scss'
 import { Link } from "react-router-dom"
-import MusicPlayer from "./musicplayer"
+import MusicPlayer from '../../components/music-player/musicplayer';
 
-class preekdetail extends Component {
+class preekSection extends Component {
     render() {
         return (
             <>
@@ -102,4 +102,4 @@ class preekdetail extends Component {
     }
 }
 
-export default preekdetail;
+export default preekSection;

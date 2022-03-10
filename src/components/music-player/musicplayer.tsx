@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import Icon from '../../assets/icons/icon'
 import './musicplayer.scss'
+import VolumeSlider from '../volume-slider/volumeSlider';
+import TimeSlider from '../time-slider/timeSlider';
 
 class musicplayer extends Component {
     render() {
@@ -12,12 +14,10 @@ class musicplayer extends Component {
                             </div>
                             <div className="slider-container">
                                 <div className="time-slider">
-                                    <input type="range" min="1" max="100" value="80" className="slider" id="myRange"></input>
+                                    <TimeSlider />
                                 </div>
                                 <div className="volume-slider">
-                                    <div className="volume">
-                                        <Icon id="volume-up" icon="volume-up" size="10px"/><input type="range" min="1" max="100" value="100" className="slider" id="myRange"></input>
-                                    </div>
+                                    <VolumeSlider />
                                     <div className="timer">
                                         <p className='timings'>59:14 / 70:57</p>
                                     </div>

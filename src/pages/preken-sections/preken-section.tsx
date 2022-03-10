@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Icon from '../../assets/icons/icon'
-import Preken from '../preken/preken'
-import './alle_preken.scss'
-import Dropdown from '../accordion/dropdown';
+import Preek from '../../components/preek/preek';
+import "./preken-section.scss"
+import Dropdown from '../../components/accordion/dropdown';
 
 import Checkbox from '@mui/material/Checkbox';
 const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
 
 
-class alle_preken extends Component {
+class prekenSection extends Component {
     render() {
         return (
             <>
@@ -82,13 +82,13 @@ class alle_preken extends Component {
                         </Row>
                         <Row className='prekenRow'>
                             <div>
-                                <Preken />
-                                <Preken />
-                                <Preken />
-                                <Preken />
-                                <Preken />
-                                <Preken />
-                                <Preken />
+                                <Preek />
+                                <Preek />
+                                <Preek />
+                                <Preek />
+                                <Preek />
+                                <Preek />
+                                <Preek />
                             </div>
                         </Row>
                     </Col>
@@ -100,4 +100,4 @@ class alle_preken extends Component {
     }
 }
 
-export default alle_preken;
+export default prekenSection;

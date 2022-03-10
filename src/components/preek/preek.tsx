@@ -4,10 +4,7 @@ import { Link } from "react-router-dom"
 import Checkbox from '@mui/material/Checkbox';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
-
-
-
-import './preken.scss'
+import './preek.scss'
 
 
 class preken extends Component {
@@ -19,7 +16,7 @@ class preken extends Component {
             <div className='preek-wrapper'>
                     <div className="titel_preek">
                         <div className="titel_preek_wrapper">
-                            <h4><Link to="/prekendetail" >De geboorte van de Heere Jezus</Link></h4>
+                            <h4><Link to="/preek" >De geboorte van de Heere Jezus</Link></h4>
                             <ul className='subtitel_preek'>
                                 <li>Jesaja 9:5b</li>
                             </ul>

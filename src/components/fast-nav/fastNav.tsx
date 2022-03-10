@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Icon from '../../assets/icons/icon'
-import './snelNav.scss'
+import './fastNav.scss'
 
-class snelnav extends Component {
+class fastNav extends Component {
     render() {
         return (
             <div className='nav-wrapper'>
@@ -13,4 +13,4 @@ class snelnav extends Component {
     }
 }
 
-export default snelnav;
+export default fastNav;
