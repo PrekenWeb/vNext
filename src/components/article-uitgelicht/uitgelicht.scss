@@ -44,6 +44,7 @@
             font-size: 13px;
             font-weight: 400;
             color: #1274BA;
+            margin-top: -10px;
             #calendar {
                 position: relative;
                 top: -2px;
@@ -51,7 +52,7 @@
             }
         }
         h2 {
-            margin-top: 15px;
+            margin-top: 5px;
             font-size: 22px;
             line-height: 27px;
             font-weight: 700;
@@ -78,6 +79,18 @@
         }
     }
     
+    @media (max-width: 992px) {
+        .buttons {
+            top: 140px;
+        }
+    }
+    
+    @media (max-width: 768px) {
+        .buttons {
+            top: 240px;
+        }
+    }
+    
     @media (max-width: 576px) {
         .card-big-image {
             margin-top: 10px;
@@ -86,7 +99,7 @@
             padding: 10px 20px 5px 20px;
         }
         .buttons {
-            top: 130px;
+            top: 230px;
             #left {
                 scale: 0.8;
             }

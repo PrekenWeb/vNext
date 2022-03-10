@@ -12,7 +12,7 @@ class preekSection extends Component {
             <Container className='prekendetail-container'>
                 <Row>
                     <Col xs={12} md={9} lg={9}>
-                        <Link to="/allepreken"><Icon id="arrow-left" icon="arrow-left" size="13px"/>Alle preken</Link>
+                        <Link to="/preken"><Icon id="arrow-left" icon="arrow-left" size="13px"/>Alle preken</Link>
                         <div className="info_preek detail">
                             <div className="labels_preek">
                                 <label><a href='#top'><Icon id="music" icon="music" size="13px"/>Preek</a></label>

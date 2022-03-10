@@ -13,10 +13,10 @@ class mainSection extends Component {
             <div id="backgroundmain" style={{backgroundImage: `url(${BackgroundMain})`}}>
                 <Container>
                      <Row>
-                         <Col className='image-wrapper' xs={12} md={5} lg={5}>
+                         <Col className='image-wrapper' xs={12} md={4} lg={5}>
                          <img src={ImageMain} alt="main" id="mainimage"></img>
                          </Col>
-                         <Col className='text-wrapper' xs={12} md={5} lg={5}>
+                         <Col className='text-wrapper' xs={12} md={8} lg={5}>
                             <h1>Preken luisteren, lezen of downloaden</h1>
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ac dignissim metus, vitae ullamcorper neque. Praesent ornare, nulla bibendum placerat, diam purus sodales augue.</p>
                             <button className='button'><Link to="/preken">Bekijk alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></Link></button>

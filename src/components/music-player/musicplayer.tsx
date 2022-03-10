@@ -32,7 +32,7 @@ class musicplayer extends Component {
                                 <button className='action-button'><Icon id="download" icon="download" size="18px"/>Download</button>
                                 <button className='action-button'><Icon id="bookmark2" icon="bookmark" size="18px"/>Opslaan</button>
                                 <div className="delen-wrapper">
-                                <button className='action-button share'><Icon id="share" icon="share" size="18px"/>Delen</button>
+                                <button data-trigger="focus" className='action-button share'><Icon id="share" icon="share" size="18px"/>Delen</button>
                                 <div className="popover-content">
                                     <p className="popover-message">
                                         <div className="mail"><a href='#top'><Icon id="share" icon="mail" size="13px"/>E-mail</a></div>
@@ -44,7 +44,7 @@ class musicplayer extends Component {
                                 </div>
                             </div>
                             </div>
-                            
+                
                         </div>
             </div>
         );

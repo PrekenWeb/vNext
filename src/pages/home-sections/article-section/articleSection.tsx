@@ -4,6 +4,7 @@ import Icon from '../../../assets/icons/icon';
 import './articleSection.scss'
 import Uitgelicht from '../../../components/article-uitgelicht/uitgelicht';
 import Recent from '../../../components/article-recent/recent';
+import RecentTest from '../../../components/article-recent/recentTest';
 
 
 class articleSection extends Component {
@@ -12,11 +13,11 @@ class articleSection extends Component {
             <div className='artikelen-wrapper'>
                 <Container>
                     <Row className='title-row'>
-                        <Col className="uitgelicht" xs={12} md={6} lg={6}>
+                        <Col className="uitgelicht" xs={12} md={5} lg={6}>
                             <h2>Uitgelicht</h2>
                             <Uitgelicht />
                         </Col>
-                        <Col xs={12} md={6} lg={6}>
+                        <Col xs={12} md={7} lg={6}>
                             <Row>
                                 <div className="recent">
                                     <h2>Recente berichten</h2>
@@ -28,7 +29,7 @@ class articleSection extends Component {
                                     <Recent />
                                 </Col>
                                 <Col xs={12} md={6} lg={6}>
-                                    <Recent />
+                                    <RecentTest />
                                 </Col>
                             </Row>
                             <Row className='bottom-row'>

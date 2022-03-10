@@ -7,7 +7,7 @@ import BookmarkIcon from '@mui/icons-material/Bookmark';
 import './preek.scss'
 
 
-class preek extends Component {
+class preekActive extends Component {
     
     render() {
         const label = { inputProps: { 'aria-label': 'Checkbox demo' } };
@@ -16,14 +16,15 @@ class preek extends Component {
             <div className='preek-wrapper'>
                     <div className="titel_preek">
                         <div className="titel_preek_wrapper">
-                            <h4><Link to="/preek" >De geboorte van de Heere Jezus</Link></h4>
+                            <h4><Link to="/preek" >Lorum Ipsum lorum ipsum lorum ipsum</Link></h4>
                             <ul className='subtitel_preek'>
                                 <li>Jesaja 9:5b</li>
                             </ul>
                         </div>
                         <div className="checkbox-container">
-                                <Checkbox
+                                <Checkbox 
                                 {...label}
+                                defaultChecked
                                 icon={<BookmarkBorderIcon />}
                                 checkedIcon={<BookmarkIcon />}
                                 sx={{
@@ -49,4 +50,4 @@ class preek extends Component {
     }
 }
 
-export default preek;
+export default preekActive;

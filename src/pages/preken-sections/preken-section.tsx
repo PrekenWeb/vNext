@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Container, Row, Col } from "react-bootstrap";
 import Icon from '../../assets/icons/icon'
 import Preek from '../../components/preek/preek';
+import PreekActive from '../../components/preek/preekActive';
 import "./preken-section.scss"
 import Dropdown from '../../components/accordion/dropdown';
 
@@ -24,7 +25,7 @@ class prekenSection extends Component {
                                 <h4>Categorieën</h4>
                                 <form action=''>
                                     <div className="categorie audiopreken">
-                                        <label> <Checkbox {...label} /><Icon id="music" icon="music" size="13px"/>Audiopreken (<span>132</span>)</label>
+                                        <label className='checked'> <Checkbox {...label} defaultChecked /><Icon id="music" icon="music" size="13px"/>Audiopreken (<span>132</span>)</label>
                                     </div>
                                     <div className="categorie audioprekenvideo">
                                         <label> <Checkbox {...label} /><Icon id="video" icon="video" size="13px"/>Audiopreken met video (<span>34</span>)</label>
@@ -83,7 +84,7 @@ class prekenSection extends Component {
                         <Row className='prekenRow'>
                             <div>
                                 <Preek />
-                                <Preek />
+                                <PreekActive />
                                 <Preek />
                                 <Preek />
                                 <Preek />

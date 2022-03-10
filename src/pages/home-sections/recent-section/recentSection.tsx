@@ -5,6 +5,7 @@ import Icon from '../../../assets/icons/icon';
 import FastNav from '../../../components/fast-nav/fastNav';
 import './recentSection.scss'
 import { Link } from "react-router-dom"
+import PreekActive from '../../../components/preek/preekActive';
 
 class recentSection extends Component {
     render() {
@@ -15,11 +16,11 @@ class recentSection extends Component {
                     <Col className='preken-top-col' xs={12} md={7} lg={7}>
                         <h2>Recente preken</h2>
                         <Preek />
+                        <PreekActive />
                         <Preek />
                         <Preek />
                         <Preek />
-                        <Preek />
-                        <Link to="/allepreken" className='allepreken'>Alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></Link>
+                        <Link to="/preken" className='allepreken'>Alle preken <Icon id="arrowright" icon="arrow-right" size="13px"/></Link>
                     </Col>
                     <Col></Col>
                     <Col className="preken-bot-col" xs={12} md={4} lg={4}>

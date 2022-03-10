@@ -63,13 +63,14 @@
             font-size: 14px;
             font-weight: 300;
             color: #114367;
+            text-decoration: underline;
             background-color: white;
             border: none;
             margin: 0;
             transition: 0.1s ease-in-out;
             span {
                 &:hover {
-                    text-decoration: underline;
+                    font-weight: 500;
                 }
             }
             #play {
@@ -108,6 +109,9 @@
     }
     
     .delen-wrapper {
+        &:hover {
+            text-decoration: underline;
+        }
         .popover-content {
             visibility: hidden;
             display: none;
@@ -119,14 +123,17 @@
             border-radius: 3px;
             box-shadow: 0px 0px 10px rgba($color: #000000, $alpha: 0.16);
             transition: 0.2s ease-in-out;
+            .mail:hover,
+            .whatsapp:hover,
+            .facebook:hover,
+            .twitter:hover,
+            .linkedin:hover {
+                text-decoration: underline;
+            }
             a {
                 font-size: 13px;
                 font-weight: 300;
                 color: #3C617D;
-                &:hover {
-                    font-weight: 400;
-                    text-decoration: underline;
-                }
                 #share {
                     margin-right: 6px;
                     position: relative;
