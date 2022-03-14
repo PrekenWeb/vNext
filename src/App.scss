@@ -4,6 +4,20 @@
     font-family: 'Fira Sans', sans-serif;
 }
 
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+    width: 100%;
+    padding-right: var(--bs-gutter-x, .75rem);
+    padding-left: var(--bs-gutter-x, .75rem);
+    margin-right: auto;
+    margin-left: auto;
+}
+
 .App-logo {
     height: 40vmin;
     pointer-events: none;

@@ -1,9 +1,9 @@
 import React, { FC } from 'react';
 import './App.scss';
 import { Routes, Route } from "react-router-dom"
-import Home from './pages/home-page';
-import Preken from './pages/preken-page';
-import Preek from './pages/preek-page';
+import Home from './pages/home';
+import Preken from './pages/preken';
+import Preek from './pages/preek';
 
 
 const App: FC = () => {

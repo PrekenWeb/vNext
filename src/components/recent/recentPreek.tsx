@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
-import Preek from '../../../components/preek/preek';
+import Preek from '../preek/preek';
 import { Container, Row, Col } from "react-bootstrap";
-import Icon from '../../../assets/icons/icon';
-import FastNav from '../../../components/fast-nav/fastNav';
-import './recentSection.scss'
+import Icon from '../../assets/icons/icon';
+import FastNav from '../fast-nav/fastNav';
+import './recentPreek.scss'
 import { Link } from "react-router-dom"
-import PreekActive from '../../../components/preek/preekActive';
+import PreekActive from '../preek/preekActive';
 
-class recentSection extends Component {
+class recentPreek extends Component {
     render() {
         return (
             <div className='recente-preken'>
@@ -42,4 +42,4 @@ class recentSection extends Component {
     }
 }
 
-export default recentSection;
+export default recentPreek;
