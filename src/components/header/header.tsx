@@ -2,11 +2,11 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import './header.scss';
 import England from '../../assets/images/england.svg'
-import Logo from '../../assets/images/logo.svg';
+import Logo from '../../assets/images/prekenweb.svg'
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import Icon from '../../assets/icons/icon'
-
+import MenuButton from '../menuButton/menuButton'
 
 const Header = () => {
 
@@ -40,7 +40,7 @@ const Header = () => {
               <div className="menu-item-container">
                 <Link to="/preken" className={"menu-item lg"}><Icon className='list-icon' icon="list" size="15px"/>Alle preken</Link>
                 <Link to="#top" className={"menu-item lg"}><Icon className='info-icon' icon="info" size="15px"/>Hulp & contact</Link>
-                <button className="menu menu-item"><Icon className='menu-icon' icon="menu" size="18px"/>Menu</button>
+                <MenuButton></MenuButton>
               </div>
             </Col>
             <Col className="search-container" xs={12} lg={5}>

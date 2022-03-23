@@ -1,0 +1,31 @@
+#basic-button {
+    display: none;
+    font-family: "Fira Sans", sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    background-color: #114367;
+    color: white;
+    padding: 3px 10px;
+    .menu-icon {
+        margin-right: 8px
+    }
+    &:hover {
+        background-color: #7C98AC;
+    }
+}
+
+.list-item {
+    text-decoration: none;
+    font-weight: 500;
+    color: #114367;
+    transition: 0.1s ease-in-out;
+    &:hover {
+        color: #114367;
+    }
+}
+
+@media (max-width: 576px) {
+    #basic-button {
+        display: block;
+    }
+}
