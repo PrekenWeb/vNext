@@ -2,7 +2,7 @@ import * as React from 'react';
 import AppBar from '@mui/material/AppBar';
 import './header.scss';
 import England from '../../assets/images/england.svg'
-import Logo from '../../assets/images/prekenweb.svg'
+import Logo from '../../assets/images/logo-prekenweb.png'
 import { Container, Row, Col } from "react-bootstrap";
 import { Link } from 'react-router-dom';
 import Icon from '../../assets/icons/icon'
